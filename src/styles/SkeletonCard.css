@@ -1,0 +1,61 @@
+.skeleton-card {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.skeleton-card__image {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  border-radius: 0;
+}
+
+.skeleton-card--shop .skeleton-card__image {
+  aspect-ratio: 1 / 1;
+  background: #ececec;
+}
+
+.skeleton-card__body {
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.skeleton-card__line {
+  height: 12px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.skeleton-card__line--short {
+  width: 40%;
+  height: 10px;
+}
+
+.skeleton-card__line--price {
+  width: 55%;
+  margin-top: var(--space-1);
+}
+
+.skeleton-card__shine {
+  background: linear-gradient(
+    90deg,
+    #ecece8 0%,
+    #f5f5f0 40%,
+    #ecece8 80%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
