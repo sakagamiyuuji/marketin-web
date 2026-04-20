@@ -102,7 +102,13 @@ export default function Login() {
             />
             Ingat saya
           </label>
-          <button type="button" className="auth-page__link">
+          <button
+            type="button"
+            className="auth-page__link"
+            onClick={() =>
+              window.alert('Coming soon\n\nFitur lupa kata sandi belum tersedia.')
+            }
+          >
             Lupa kata sandi?
           </button>
         </div>

@@ -75,9 +75,9 @@ export default function Home() {
               <img
                 className="home-hero__img"
                 src="/hero-banner.png"
-                alt="Model mengenakan outfit pilihan MarketIn"
-                width={560}
-                height={700}
+                alt="Street style: outfit warna-warni dan coat beige di jalan kota"
+                width={640}
+                height={960}
                 loading="eager"
                 fetchPriority="high"
               />

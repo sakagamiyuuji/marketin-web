@@ -330,6 +330,11 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-3);
+  align-items: stretch;
+}
+
+.products-shop__grid > * {
+  min-height: 0;
 }
 
 @media (max-width: 1100px) {
